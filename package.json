@@ -4,7 +4,10 @@
   "description": "Scaling nodejs using pm2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:pm2:single": "pm2 start index.js -i 1",
+    "start:pm2:multi": "pm2 start index.js -i 4"
   },
   "author": "TouqeerH",
   "license": "ISC",
